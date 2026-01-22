@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
             <Link to="/" className="flex items-center gap-3 group flex-shrink-0 z-[70]">
               <div>
                 <img
-                  src="/logo.png"
+                  src="/img/logo.png"
                   alt="Aditya Skill Gate Logo"
                   className="w-12 h-12 object-contain"
                 />
