@@ -42,16 +42,24 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group flex-shrink-0 z-[70]">
-              <div className="w-11 h-11 bg-gradient-to-br from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:rotate-6 transition-transform duration-300">
-                <Rocket size={24} />
+              <div>
+                <img
+                  src="/public/logo.png"
+                  alt="Aditya Skill Gate Logo"
+                  className="w-12 h-12 object-contain"
+                />
               </div>
+
               <div className="flex flex-col">
                 <span className="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-400 dark:to-green-400">
                   Aditya Skill Gate
                 </span>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-bold leading-none">IT Solutions</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-bold leading-none">
+                  IT Solutions
+                </p>
               </div>
             </Link>
+
 
             {/* Desktop Navigation - CENTERED */}
             <div className="hidden lg:flex flex-grow justify-center items-center space-x-8">

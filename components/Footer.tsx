@@ -17,40 +17,90 @@ const Footer: React.FC = () => {
             <p className="text-slate-600 dark:text-slate-400 max-w-sm mb-6">
               Empowering the next generation of tech leaders through industry-standard training and cutting-edge IT solutions.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://facebook.com" className="p-2 bg-white dark:bg-slate-800 rounded-full text-blue-600 shadow-sm hover:scale-110 transition-transform">
-                <Facebook size={20} />
-              </a>
-              <a href="https://instagram.com" className="p-2 bg-white dark:bg-slate-800 rounded-full text-pink-500 shadow-sm hover:scale-110 transition-transform">
-                <Instagram size={20} />
-              </a>
-              <a href="https://linkedin.com" className="p-2 bg-white dark:bg-slate-800 rounded-full text-blue-700 shadow-sm hover:scale-110 transition-transform">
-                <Linkedin size={20} />
-              </a>
-              <a href="https://wa.me/9100000000" className="p-2 bg-white dark:bg-slate-800 rounded-full text-green-500 shadow-sm hover:scale-110 transition-transform">
-                <Send size={20} />
-              </a>
+          </div>
+
+          <div align="center">
+              <h4 className="font-bold text-slate-900 dark:text-white mb-4">
+                Quick Links
+              </h4>
+
+              <div className="flex flex-col gap-3 items-center">
+                <a
+                  href="#/"
+                  className="w-40 text-center px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold hover:bg-blue-600 hover:text-white transition-all"
+                >
+                  Home
+                </a>
+
+                <a
+                  href="#/about"
+                  className="w-40 text-center px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold hover:bg-blue-600 hover:text-white transition-all"
+                >
+                  About Us
+                </a>
+
+                <a
+                  href="#/courses"
+                  className="w-40 text-center px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold hover:bg-blue-600 hover:text-white transition-all"
+                >
+                  Courses
+                </a>
+
+                <a
+                  href="#/jobs"
+                  className="w-40 text-center px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold hover:bg-blue-600 hover:text-white transition-all"
+                >
+                  Jobs
+                </a>
+              </div>
             </div>
-          </div>
+
 
           <div>
-            <h4 className="font-bold text-slate-900 dark:text-white mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-              <li><a href="#/" className="hover:text-blue-600">Home</a></li>
-              <li><a href="#/" className="hover:text-blue-600">About Us</a></li>
-              <li><a href="#/" className="hover:text-blue-600">Courses</a></li>
-              <li><a href="#/" className="hover:text-blue-600">Careers</a></li>
-            </ul>
-          </div>
+            <div className="flex flex-col items-center text-center">
+              <h4 className="font-bold text-slate-900 dark:text-white mb-4">
+                Contact Info
+              </h4>
 
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white mb-4">Contact Info</h4>
-            <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-              <li>123 Tech Avenue, Skill City</li>
-              <li>New Delhi, India - 110001</li>
-              <li>info@adityaskillgate.com</li>
-              <li>+91 98765 43210</li>
-            </ul>
+              <div className="flex justify-center items-center space-x-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61584974574863"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white dark:bg-slate-800 rounded-full text-blue-600 shadow-sm hover:scale-110 transition-transform"
+                >
+                  <Facebook size={20} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/adityaskillgate_official/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white dark:bg-slate-800 rounded-full text-pink-500 shadow-sm hover:scale-110 transition-transform"
+                >
+                  <Instagram size={20} />
+                </a>
+
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white dark:bg-slate-800 rounded-full text-blue-700 shadow-sm hover:scale-110 transition-transform"
+                >
+                  <Linkedin size={20} />
+                </a>
+
+                <a
+                  href="https://wa.me/916382604808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white dark:bg-slate-800 rounded-full text-green-500 shadow-sm hover:scale-110 transition-transform"
+                >
+                  <Send size={20} />
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 text-sm">

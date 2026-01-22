@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Phone, Mail, MessageCircle, MapPin, ChevronDown, ChevronUp, Send } from 'lucide-react';
+import { Phone,Instagram, Mail, MessageCircle, MapPin, ChevronDown, ChevronUp, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -35,56 +35,194 @@ const Contact: React.FC = () => {
         <div className="grid lg:grid-cols-3 gap-12 mb-24">
           {/* Contact Details */}
           <div className="lg:col-span-1 space-y-6">
-            <div className="p-8 bg-blue-50 dark:bg-blue-900/10 rounded-3xl border border-blue-100 dark:border-blue-800 shadow-lg shadow-blue-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white">
+
+            {/* Call Us */}
+            <a
+              href="tel:+916382604808"
+              className="block p-8 bg-blue-50 dark:bg-blue-900/10 rounded-3xl border border-blue-100 dark:border-blue-800 shadow-lg shadow-blue-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white"
+            >
               <Phone className="text-blue-600 dark:text-blue-400 mb-4 group-hover:rotate-12 transition-transform" />
               <h3 className="font-bold mb-2">Call Us</h3>
-              <p className="text-slate-600 dark:text-slate-400 font-medium">+91 98765 43210</p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">Mon - Sat, 10am - 7pm</p>
-            </div>
-            <div className="p-8 bg-green-50 dark:bg-green-900/10 rounded-3xl border border-green-100 dark:border-green-800 shadow-lg shadow-green-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white">
+              <p className="text-slate-600 dark:text-slate-400 font-medium">
+                +91 63826 04808
+              </p>
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">
+                Mon – Sat, 10am – 7pm
+              </p>
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/916382604808"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-8 bg-green-50 dark:bg-green-900/10 rounded-3xl border border-green-100 dark:border-green-800 shadow-lg shadow-green-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white"
+            >
               <MessageCircle className="text-green-600 dark:text-green-400 mb-4 group-hover:rotate-12 transition-transform" />
               <h3 className="font-bold mb-2">WhatsApp</h3>
-              <p className="text-slate-600 dark:text-slate-400 font-medium">+91 98765 43211</p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">Instant support available</p>
-            </div>
-            <div className="p-8 bg-purple-50 dark:bg-purple-900/10 rounded-3xl border border-purple-100 dark:border-purple-800 shadow-lg shadow-purple-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white">
+              <p className="text-slate-600 dark:text-slate-400 font-medium">
+                +91 63826 04808
+              </p>
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">
+                Instant support available
+              </p>
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:adityaskillgateitsolution@gmail.com"
+              className="block p-8 bg-purple-50 dark:bg-purple-900/10 rounded-3xl border border-purple-100 dark:border-purple-800 shadow-lg shadow-purple-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white"
+            >
               <Mail className="text-purple-600 dark:text-purple-400 mb-4 group-hover:rotate-12 transition-transform" />
               <h3 className="font-bold mb-2">Email Us</h3>
-              <p className="text-slate-600 dark:text-slate-400 font-medium">info@adityaskillgate.com</p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">Response within 24 hours</p>
-            </div>
-            <div className="p-8 bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-lg shadow-slate-200/50 dark:shadow-none group hover:scale-105 transition-all text-slate-900 dark:text-white">
+              <p className="text-slate-600 dark:text-slate-400 font-medium break-all">
+                adityaskillgateitsolution@gmail.com
+              </p>
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">
+                Response within 24 hours
+              </p>
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/adityaskillgate_official/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-8 bg-pink-50 dark:bg-pink-900/10 rounded-3xl border border-pink-100 dark:border-pink-800 shadow-lg shadow-pink-500/5 group hover:scale-105 transition-all text-slate-900 dark:text-white"
+            >
+              <Instagram className="text-pink-600 dark:text-pink-400 mb-4 group-hover:rotate-12 transition-transform" />
+              <h3 className="font-bold mb-2">Instagram</h3>
+              <p className="text-slate-600 dark:text-slate-400 font-medium">
+                @adityaskillgateitsolution
+              </p>
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-2">
+                Follow for updates & courses
+              </p>
+            </a>
+
+            {/* Location */}
+            <a
+              href="https://www.google.com/maps?q=No+12+Thiruvudayan+Saalai+Sankarankovil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-8 bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-lg shadow-slate-200/50 dark:shadow-none group hover:scale-105 transition-all text-slate-900 dark:text-white"
+            >
               <MapPin className="text-slate-600 dark:text-slate-400 mb-4 group-hover:rotate-12 transition-transform" />
               <h3 className="font-bold mb-2">Our Location</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">123 Tech Avenue, Skill City, New Delhi - 110001</p>
-            </div>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                No: 12, Thiruvudayan Saalai, Sankarankovil
+              </p>
+            </a>
+
           </div>
+
 
           {/* Form */}
           <div className="lg:col-span-2 bg-white dark:bg-slate-800 text-slate-900 dark:text-white p-8 md:p-12 rounded-[3rem] shadow-2xl shadow-slate-200/60 dark:shadow-none border border-slate-100 dark:border-slate-700">
-            <h2 className="text-3xl font-bold mb-8">Send Us a Message</h2>
-            <form className="grid sm:grid-cols-2 gap-8" onSubmit={(e) => e.preventDefault()}>
-              <div className="space-y-3">
-                <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">Full Name</label>
-                <input type="text" placeholder="John Doe" className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner text-slate-900 dark:text-white placeholder:text-slate-400" />
-              </div>
-              <div className="space-y-3">
-                <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">Email Address</label>
-                <input type="email" placeholder="john@example.com" className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner text-slate-900 dark:text-white placeholder:text-slate-400" />
-              </div>
-              <div className="space-y-3 sm:col-span-2">
-                <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">Subject</label>
-                <input type="text" placeholder="Course Inquiry / Business Solution" className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner text-slate-900 dark:text-white placeholder:text-slate-400" />
-              </div>
-              <div className="space-y-3 sm:col-span-2">
-                <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">Message</label>
-                <textarea rows={5} placeholder="Tell us more about your requirements..." className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner resize-none text-slate-900 dark:text-white placeholder:text-slate-400" />
-              </div>
-              <button className="sm:col-span-2 bg-gradient-to-r from-blue-600 to-green-600 text-white font-black uppercase tracking-widest py-5 rounded-2xl shadow-xl shadow-blue-500/30 hover:shadow-blue-600/50 hover:scale-[1.01] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-                Send Message <Send size={20} />
-              </button>
-            </form>
-          </div>
+              <h2 className="text-3xl font-bold mb-8">Send Us a Message</h2>
+
+              <form
+                className="grid sm:grid-cols-2 gap-8"
+                onSubmit={(e) => {
+                  e.preventDefault()
+
+                  const formData = new FormData(e.currentTarget)
+
+                  const name = formData.get("name")
+                  const email = formData.get("email")
+                  const subject = formData.get("subject")
+                  const message = formData.get("message")
+
+                  const whatsappMessage = `
+            Hello Aditya Skill Gate 👋
+
+            Name: ${name}
+            Email: ${email}
+            Subject: ${subject}
+
+            Message:
+            ${message}
+                  `.trim()
+
+                  const whatsappURL = `https://wa.me/916382604808?text=${encodeURIComponent(
+                    whatsappMessage
+                  )}`
+
+                  window.open(whatsappURL, "_blank")
+
+                  e.currentTarget.reset()
+                }}
+              >
+                {/* Full Name */}
+                <div className="space-y-3">
+                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">
+                    Full Name
+                  </label>
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Abdul"
+                    required
+                    className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner text-slate-900 dark:text-white placeholder:text-slate-400"
+                  />
+                </div>
+
+                {/* Email */}
+                <div className="space-y-3">
+                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">
+                    Email Address
+                  </label>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="abdul@gmail.com"
+                    required
+                    className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner text-slate-900 dark:text-white placeholder:text-slate-400"
+                  />
+                </div>
+
+                {/* Subject */}
+                <div className="space-y-3 sm:col-span-2">
+                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">
+                    Subject
+                  </label>
+                  <input
+                    name="subject"
+                    type="text"
+                    placeholder="Course Inquiry / Business Solution"
+                    required
+                    className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner text-slate-900 dark:text-white placeholder:text-slate-400"
+                  />
+                </div>
+
+                {/* Message */}
+                <div className="space-y-3 sm:col-span-2">
+                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 px-1">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    rows={5}
+                    placeholder="Tell us more about your requirements..."
+                    required
+                    className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-900 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-slate-200 dark:border-slate-700 shadow-inner resize-none text-slate-900 dark:text-white placeholder:text-slate-400"
+                  />
+                </div>
+
+                {/* Submit */}
+                <button
+                  type="submit"
+                  className="sm:col-span-2 bg-gradient-to-r from-blue-600 to-green-600 text-white font-black uppercase tracking-widest py-5 rounded-2xl shadow-xl shadow-blue-500/30 hover:shadow-blue-600/50 hover:scale-[1.01] active:scale-[0.98] transition-all flex items-center justify-center gap-3"
+                >
+                  Send via WhatsApp <Send size={20} />
+                </button>
+              </form>
+
+              <p className="text-xs text-slate-400 text-center mt-6">
+                Clicking send will open WhatsApp with your message pre-filled.
+              </p>
+            </div>
+
         </div>
 
         {/* FAQ Section */}
