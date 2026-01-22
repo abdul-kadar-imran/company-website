@@ -1,0 +1,8 @@
+
+{
+  "name": "Aditya Skill Gate IT Solutions",
+  "description": "Official website for Aditya Skill Gate IT Solutions, an IT services and tech development training center.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
