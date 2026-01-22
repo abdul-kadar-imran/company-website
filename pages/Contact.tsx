@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
               <MapPin className="text-slate-600 dark:text-slate-400 mb-4 group-hover:rotate-12 transition-transform" />
               <h3 className="font-bold mb-2">Our Location</h3>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                No: 12, Thiruvudayan Saalai, Sankarankovil
+                No: 12, Thiruvudayan Saalai, Sankarankovil.
               </p>
             </a>
 
